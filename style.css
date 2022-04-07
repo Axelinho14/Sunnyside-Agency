@@ -1,0 +1,858 @@
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*graphic design text*/
+    --Dark-blue: hsl(198, 62%, 26%); /*photography text*/
+    --Dark-moderate-cyan: #458c7e; /*footer*/
+
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to left top, hsla(185, 82%, 74%, 0.788), hsla(184, 92%, 60%, 0.747));
+}
+.header{
+    background-image: url(image/desktop/image-header.jpg);
+    background-position: 0cm -3cm;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 19.2cm;
+    width: 40cm;
+}
+#header-container{
+    display: flex;
+    justify-content: space-between;
+}
+#logo-sunnyside-head{
+    width: 10%;
+    height: 10%;
+    margin-top: 0.5cm;
+    margin-left: 1cm;
+}
+#header-boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 14cm;
+    margin-top: 0.8cm;
+    margin-right: 0.5cm;
+    color: var(--White);
+    font-family: Barlow;
+    font-size: 0.4cm;
+}
+#header-boutons a:hover{
+    cursor: pointer;
+}
+#about{
+    color: var(--White);
+    text-decoration: none;
+}
+#services{
+    color: var(--White);
+    text-decoration: none;
+}
+#projects{
+    color: var(--White);
+    text-decoration: none;
+}
+#contact{
+    text-align: center;
+    font-size: 0.35cm;
+    margin-top: -0.3cm;
+    padding-top: 0.35cm;
+    font-family: Fraunces;
+    font-variation-settings: "wght" 900;
+    background-color: var(--White);
+    color: var(--Very-dark-desaturated-blue);
+    border-radius: 1cm;
+    width: 3.2cm;
+    height: 0.8cm;
+    transition: 0.3s;
+    text-decoration: none
+}
+#contact:hover{
+    color: var(--White);
+    background-color: hsl(200, 100%, 72%);
+    cursor: pointer;
+}
+#title{
+    text-align: center;
+    font-family: fraunces;
+    color: var(--White);
+    font-size: 1.5cm;
+    margin-top: 2.5cm;
+    letter-spacing: 0.2cm;
+}
+#arrow{
+    margin-left: 19.5cm;
+    margin-top: 2cm;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 20cm 20cm;
+    grid-template-rows: 16cm 16cm 16cm 19cm 14cm;
+    width: 40cm;
+}
+#text-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 20cm;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;;
+}
+#transform{
+    font-size: 1cm;
+    font-family: fraunces;
+    color: var(--Very-dark-desaturated-blue);
+    margin-left: 4cm;
+    margin-top: 4cm;
+}
+#desc-one{
+    font-size: 0.5cm;
+    font-family: Barlow;
+    margin-left: 4cm;
+    margin-top: 0.5cm;
+    line-height: 0.8cm;
+    color: var(--Dark-grayish-blue);
+}
+#learn-one{
+    width: 3.8cm;
+    padding-left: 0.15cm;
+    margin-left: 4cm;
+    margin-top: 1cm;
+    font-family: fraunces;
+    color: var(--Very-dark-desaturated-blue);
+    font-variation-settings: "wght" 900;
+    font-size: 0.5cm;
+    position: relative;
+    z-index: 0;
+    transition: 0.3s;
+}
+#learn-one::before{
+    position: absolute;
+    content: "";
+    background-color: hsl(48, 95%, 85%);
+    width: 100%;
+    height:0.3cm;
+    top: 0.38cm;
+    left: 0cm;
+    z-index: -1;
+    border-radius: 0.3cm;
+    transition: 0.3s;
+}
+#learn-one:hover{
+    cursor: pointer;
+}
+#learn-one:hover::before{
+    background-color: var(--Yellow);
+    cursor: pointer;
+}
+#image-one{
+    grid-column: 2/3;
+    width: 20cm;
+    grid-row: 1/2;
+}
+#egg{
+    width: 20cm;
+    height: 16cm;
+}
+#image-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 20cm;
+    height: 16cm;
+}
+#glass{
+    width: 20cm;
+    height: 16cm;
+}
+#text-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 20cm;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;;
+}
+#stand-out{
+    font-size: 1cm;
+    font-family: fraunces;
+    color: var(--Very-dark-desaturated-blue);
+    margin-left: 4cm;
+    margin-top: 4cm;
+}
+#desc-two{
+    font-size: 0.5cm;
+    font-family: Barlow;
+    margin-left: 4cm;
+    margin-top: 0.5cm;
+    line-height: 0.8cm;
+    color: var(--Dark-grayish-blue);
+}
+#learn-two{
+    width: 3.8cm;
+    padding-left: 0.15cm;
+    margin-left: 4cm;
+    margin-top: 1cm;
+    font-family: fraunces;
+    color: var(--Very-dark-desaturated-blue);
+    font-variation-settings: "wght" 900;
+    font-size: 0.5cm;
+    position: relative;
+    z-index: 0;
+    transition: 0.3s;
+}
+#learn-two::before{
+    position: absolute;
+    content: "";
+    background-color: hsl(3, 100%, 93%);
+    width: 100%;
+    height:0.3cm;
+    top: 0.38cm;
+    left: 0cm;
+    z-index: -1;
+    border-radius: 0.3cm;
+    transition: 0.3s;
+}
+#learn-two:hover{
+    cursor: pointer;
+}
+#learn-two:hover::before{
+    background-color: var(--Soft-red);
+    cursor: pointer;
+}
+#cherry{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(image/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: 20cm 16cm;
+    width: 20cm;
+    height: 16cm;
+}
+#graphic{
+    font-size: 0.9cm;
+    font-family: fraunces;
+    color: var(--Dark-desaturated-cyan);
+    margin-left: 6cm;
+    margin-top: 10cm;
+}
+#desc-three{
+    text-align: center;
+    font-size: 0.5cm;
+    font-family: Barlow;
+    margin-left: -1cm;
+    margin-top: 0.7cm;
+    line-height: 0.8cm;
+    color: var(--Dark-desaturated-cyan);
+}
+#orange{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url(image/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: 20cm 16cm;
+    width: 20cm;
+    height: 16cm;
+}
+#photography{
+    font-size: 0.9cm;
+    font-family: fraunces;
+    color: var(--Dark-blue);
+    margin-left: 7cm;
+    margin-top: 10cm;
+}
+#desc-four{
+    text-align: center;
+    font-size: 0.5cm;
+    font-family: Barlow;
+    margin-left: 0cm;
+    margin-top: 0.7cm;
+    line-height: 0.8cm;
+    color: var(--Dark-blue);
+}
+#client-container{
+    background-color: var(--White);
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title-client{
+    font-family: fraunces;
+    color: var(--Grayish-blue);
+    margin-top: 3cm;
+    letter-spacing: 0.15cm;
+    font-size: 0.6cm;
+}
+#profil-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35cm;
+}
+#emily{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 3cm;
+}
+#emily-image{
+    width: 25%;
+    border-radius: 5cm;
+}
+#emily-desc{
+    font-family: Barlow;
+    color: var(--Very-dark-grayish-blue);
+    font-size: 0.5cm;
+    margin-top: 1.5cm;
+    line-height: 0.8cm;
+}
+#emily-name{
+    font-family: fraunces;
+    font-variation-settings: "wght" 900;
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 2cm;
+    font-size: 0.5cm;
+}
+#emily-job{
+    font-family: Barlow;
+    margin-top: 0.3cm;
+    color: var(--Grayish-blue);
+    font-size: 0.4cm;
+}
+#thomas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 3cm;
+}
+#thomas-image{
+    width: 25%;
+    border-radius: 5cm;
+}
+#thomas-desc{
+    font-family: Barlow;
+    color: var(--Very-dark-grayish-blue);
+    font-size: 0.5cm;
+    margin-top: 1.5cm;
+    line-height: 0.8cm;
+}
+#thomas-name{
+    font-family: fraunces;
+    font-variation-settings: "wght" 900;
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 2cm;
+    font-size: 0.5cm;
+}
+#thomas-job{
+    font-family: Barlow;
+    margin-top: 0.3cm;
+    color: var(--Grayish-blue);
+    font-size: 0.4cm;
+}
+#jennie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 3cm;
+}
+#jennie-image{
+    width: 25%;
+    border-radius: 5cm;
+}
+#jennie-desc{
+    font-family: Barlow;
+    color: var(--Very-dark-grayish-blue);
+    font-size: 0.5cm;
+    margin-top: 1.5cm;
+    line-height: 0.8cm;
+}
+#jennie-name{
+    font-family: fraunces;
+    font-variation-settings: "wght" 900;
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 2cm;
+    font-size: 0.5cm;
+}
+#jennie-job{
+    font-family: Barlow;
+    margin-top: 0.3cm;
+    color: var(--Grayish-blue);
+    font-size: 0.4cm;
+}
+#four-images{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    width: 40cm;
+    height: 14cm;
+}
+#milk{
+    width: 10cm;
+    height: 14cm;
+}
+#orange-plate{
+    width: 10cm;
+    height: 14cm;
+}
+#cone{
+    width: 10cm;
+    height: 14cm;
+}
+#sugar{
+    width: 10cm;
+    height: 14cm;
+}
+.footer-container{
+    width: 40cm;
+    height: 9cm;
+    background-color: hsl(167, 44%, 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo-sunnyside-foot{
+    width: 15%;
+    margin-top: 2cm;
+}
+#footer-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 8cm;
+    margin-top: 1cm;
+    font-family: Barlow;
+    color: var(--Dark-moderate-cyan);
+    font-size: 0.45cm;
+}
+#footer-buttons p{
+    transition: 0.3s;
+}
+#footer-buttons p:hover{
+    color: var(--White);
+    cursor: pointer;
+}
+#social-network{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2cm;
+    justify-content: space-between;
+    width: 4cm;
+    color: hsl(168, 46%, 31%);
+}
+#social-network i{
+    transition: 0.3s;
+}
+#social-network i:hover{
+    cursor: pointer;
+    color: var(--White);
+}
+#egg-mobile{
+    display: none;
+}
+#glass-mobile{
+    display: none;
+}
+#milk-mobile{
+    display: none;
+}
+#orange-plate-mobile{
+    display: none;
+}
+#cone-mobile{
+    display: none;
+}
+#sugar-mobile{
+    display: none;
+}
+.br2{
+    display: none;
+}
+#menu-mobile{
+    display: none;
+}
+#menu-boutons-mobile{
+    display: none;
+}
+@media screen and (max-width : 625px){
+    .header{
+        background-image: url(image/mobile/image-header.jpg);
+        background-position: 0cm -3cm;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 12.7cm;
+        width: 11cm;
+    }
+    .br1{
+        display: none;
+    }
+    .br2{
+        display: flex;
+    }
+    #header-container{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    #menu-boutons-mobile{
+        display: none;
+        position: absolute;
+        top: 2.5cm;
+        left: 0.8cm;
+        flex-direction: column;
+        background-color: var(--White);
+        width: 9.5cm;
+        height: 8cm;
+        text-align: center;
+    }
+    #triangle{
+        display : none;
+        height : 0;
+        width : 0;
+        border-bottom : 150px solid var(--White);
+        border-left : 150px solid transparent;
+        position: absolute;
+        top: 1.7cm;
+        left: 6.3cm;
+        transform: rotate(1deg);
+    }
+    #about-mobile{
+        margin-top: 1cm;
+        font-family: barlow;
+        font-size: 0.5cm;
+        color: var(--Dark-grayish-blue);
+        text-decoration: none;
+    }
+    #services-mobile{
+        margin-top: 1cm;
+        font-family: barlow;
+        font-size: 0.5cm;
+        color: var(--Dark-grayish-blue);
+        text-decoration: none;
+    }
+    #projects-mobile{
+        margin-top: 1cm;
+        font-family: barlow;
+        font-size: 0.5cm;
+        color: var(--Dark-grayish-blue);
+        text-decoration: none;
+    }
+    #contact-mobile{
+        text-align: center;
+        font-size: 0.4cm;
+        margin-top: 0.8cm;
+        margin-left: 2.9cm;
+        padding-top: 0.4cm;
+        font-family: Fraunces;
+        font-variation-settings: "wght" 900;
+        background-color: var(--Yellow);
+        color: var(--Very-dark-desaturated-blue);
+        border-radius: 1cm;
+        width: 3.5cm;
+        height: 0.9cm;
+        transition: 0.3s;
+        text-decoration: none
+    }
+    #logo-sunnyside-head{
+        width: 30%;
+        height: 30%;
+        margin-top: 0.8cm;
+        margin-left: 0.5cm;
+    }
+    #menu-mobile{
+        display: flex;
+        width: 5%;
+        height: 5%;
+        margin-right: 0.7cm;
+        margin-top: 0.9cm;
+    }
+    #header-boutons{
+        display: none;
+    }
+    #title{
+        font-size: 1.3cm;
+        margin-top: 1cm;
+        letter-spacing: 0.2cm;
+    }
+    #arrow{
+        margin-left: 5.2cm;
+        margin-top: 1cm;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 11cm;
+        grid-template-rows: 10cm 12cm 10cm 12cm 17cm 17cm 35cm 11cm;
+        width: 11cm;
+    }
+    #image-one{
+        grid-column: 1/2;
+        width: 11cm;
+        grid-row: 1/2;
+    }
+    #egg{
+        display: none;
+    }
+    #egg-mobile{
+        display:flex;
+        width: 11cm;
+        height: 10cm;
+    }
+    #text-one{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 11cm;
+        height: 12cm;
+        text-align: center;
+    }
+    #transform{
+        margin-left: 0cm;
+        margin-top: 1cm;
+    }
+    #desc-one{
+        margin-left: 0cm;
+        margin-top: 0.5cm;
+    }
+    #learn-one{
+        margin-left: 3.4cm;
+        margin-top: 1cm;
+    }
+    #image-two{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 11cm;
+        height: 10cm;
+    }
+    #glass{
+        display: none;
+    }
+    #glass-mobile{
+        display: flex;
+        width: 11cm;
+        height: 10cm;
+    }
+    #text-two{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 11cm;
+        height: 12cm;
+        flex-direction: column;;
+        text-align: center;
+    }
+    #stand-out{
+        margin-left: 0cm;
+        margin-top: 1.5cm;
+    }
+    #desc-two{
+        margin-left: 0cm;
+        margin-top: 0.5cm;
+    }
+    #learn-two{
+        margin-left: 3.4cm;
+    }
+    #cherry{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-image: url(image/mobile/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: 11cm 17cm;
+        width: 11cm;
+        height: 17cm;
+    }
+    #graphic{
+        font-size: 0.9cm;
+        font-family: fraunces;
+        color: var(--Dark-desaturated-cyan);
+        margin-left: 2cm;
+        margin-top: 11cm;
+    }
+    #desc-three{
+        margin-left: 0cm;
+    }
+    #orange{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        background-image: url(image/mobile/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: 11cm 17cm;
+        width: 11cm;
+        height: 17cm;
+    }
+    #photography{
+        margin-left: 2.5cm;
+        margin-top: 11cm;
+    }
+    #client-container{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 11cm;
+        height: 35cm;
+    }
+    #title-client{
+        margin-top: 2cm;
+        font-size: 0.5cm;
+    }
+    #profil-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        width: 11cm;
+        height: 25cm;
+    }
+    #emily{
+        margin-top: 1.5cm;
+    }
+    #emily-image{
+        width: 20%;
+    }
+    #emily-desc{
+        font-size: 0.5cm;
+        margin-top: 1cm;
+        line-height: 0.8cm;
+    }
+    #emily-name{
+        margin-top: 1cm;
+        font-size: 0.5cm;
+    }
+    #thomas{
+        margin-top: 2cm;
+    }
+    #thomas-image{
+        width: 20%;
+        border-radius: 5cm;
+    }
+    #thomas-desc{
+        margin-top: 1cm;
+    }
+    #thomas-name{
+        margin-top: 1cm;
+        font-size: 0.5cm;
+    }
+    #jennie{
+        margin-top: 2cm;
+    }
+    #jennie-image{
+        width: 20%;
+        border-radius: 5cm;
+    }
+    #jennie-desc{
+        font-size: 0.5cm;
+        margin-top: 1cm;
+    }
+    #jennie-name{
+        margin-top: 1cm;
+        font-size: 0.5cm;
+    }
+    #jennie-job{
+        font-family: Barlow;
+        margin-top: 0.3cm;
+        color: var(--Grayish-blue);
+        font-size: 0.4cm;
+    }
+    #four-images{
+        display: grid;
+        grid-template-columns: 5.5cm 5.5cm;
+        grid-template-rows: 5.5cm 5.5cm;
+        grid-column: 1/2;
+        grid-row: 8/9;
+        width: 11cm;
+        height: 10cm;
+    }
+    #milk{
+        display: none;
+    }
+    #orange-plate{
+        display: none;
+    }
+    #cone{
+        display: none;
+    }
+    #sugar{
+        display: none;
+    }
+    #milk-mobile{
+        display: flex;
+        width: 5.5cm;
+        height: 5.5cm;
+    }
+    #orange-plate-mobile{
+        display: flex;
+        width: 5.5cm;
+        height: 5.5cm;
+    }
+    #cone-mobile{
+        display: flex;
+        width: 5.5cm;
+        height: 5.5cm;
+    }
+    #sugar-mobile{
+        display: flex;
+        width: 5.5cm;
+        height: 5.5cm;
+    }
+    .footer-container{
+        width:11cm;
+        height: 9cm;
+        background-color: hsl(167, 44%, 70%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo-sunnyside-foot{
+        width: 40%;
+        margin-top: 1.5cm;
+    }
+    #footer-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 8cm;
+        margin-top: 1.5cm;
+        font-family: Barlow;
+        color: var(--Dark-moderate-cyan);
+        font-size: 0.45cm;
+    }
+    #footer-buttons p{
+        transition: 0.3s;
+    }
+    #footer-buttons p:hover{
+        color: var(--White);
+        cursor: pointer;
+    }
+    #social-network{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.5cm;
+        justify-content: space-between;
+        width: 4cm;
+        color: hsl(168, 46%, 31%);
+    }
+    #social-network i{
+        transition: 0.3s;
+    }
+    #social-network i:hover{
+        cursor: pointer;
+        color: var(--White);
+    }
+}
